@@ -15,5 +15,7 @@ class Service extends Model
         'image',
     ];
 
+    public $timestamps = false;
+
     public $translatable = ['name', 'content'];
 }
