@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
-class Service extends Model
+class Customer extends Model
 {
     use HasTranslations;
 
     public $timestamps = false;
 
     protected $fillable = [
-        'name',
-        'content',
         'image',
+        'content',
     ];
 
-    public $translatable = ['name', 'content'];
+    public $translatable = ['content'];
 }
