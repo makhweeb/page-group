@@ -1,5 +1,5 @@
 import 'bootstrap'
-
+import '@fortawesome/fontawesome-free/js/all.js';
 
 let dropDown = document.querySelector('.dropDown')
 let dropMenu = document.querySelector('.dropMenu')
