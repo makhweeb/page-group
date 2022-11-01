@@ -1,0 +1,21 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "./abstracts/variables";
+@import "./abstracts/function";
+@import "./abstracts/mixins";
+//
+@import "./base/reset";
+@import "./base/typography";
+//
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/slider";
+//
+@import "./layout/navigation";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/forms";
+//
+@import "./pages/home";
+@import "./pages/stati";

@@ -1,0 +1,194 @@
+.modal{
+    z-index: 998979;
+
+.modal-content{
+
+    .close-bg{
+        background: $blue;
+        margin-left: auto;
+        width: 30px ;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        margin-right: 15px;
+        margin-top: 10px;
+        border-radius: 40px;
+        opacity: .8;z-index: 87;
+        &:hover{
+            opacity: 1;
+        }
+        .btn-close{
+            font-size: 14px;
+            color: white;
+        }
+    }
+    .modal-body{
+            padding-top: 0;
+    margin-top: -25px;
+        .input-text{
+            all: unset;
+            display: inline-block;
+            width: 90%;
+            border: 1px solid #f2f2f2;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+            margin: 10px  auto;
+            &::-webkit-input-placeholder{
+                font-size: 13px;
+                opacity: .95;
+            }
+            
+            &:focus{
+                border-color: $blue;
+            }
+
+        }
+        .checkbox-input{
+            display: inline;
+        }
+        label{
+            display: inline-block;
+            font-size: 10px;
+            margin-left: 20px;
+            margin-top: -25px;
+        }
+        button.btn{
+                background-color: $green;
+    border: 1px solid $green;
+    border-radius: 10px;
+    padding: 25px 70px;
+    font-size: 22px;
+    font-weight: bold;
+    color: $white;
+    transition: .5s;
+    margin: 20px auto;
+    &:hover{
+        background: $blue;
+        border-color: #f2f2f2;
+    }
+        }
+    }
+    .btn-prinimayu{
+                background-color: $green;
+    border: 1px solid $green;
+    border-radius: 10px;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+    transition: .5s;
+    margin: 20px auto;
+    &:hover{
+        background: $blue;
+        border-color: #f2f2f2;
+    }
+        }
+        .for-bg{
+                background-color: $white;
+                color: $black;
+                border-color: #f2f2f2;
+                &:hover{
+                    background: $white;
+        border-color: $green;
+    }
+        }
+}
+}
+
+.modal-calling-con{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.52);
+
+    z-index: 9292929;
+    display: none;
+    .modal-calling{
+    width: 650px;
+    height: 400px;
+    background: white;
+    padding: 50px;
+    border: 1px solid $green;
+    border-radius: 20px;
+    overflow-y: auto;
+    @media (max-width: 757px) {
+        width: 90%;
+        padding: 20px;
+        height: auto;
+    }
+    
+    @media (max-width: 450px) {
+        width: 98%;
+        height: auto;
+    }
+    .close-calling{
+        all: unset;
+        background: $blue;
+        transform: rotateZ(45deg) scale(1.4);
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        font-size: 22px!important;
+        border-radius: 30px;
+        color: $white;
+        margin-left: auto;
+        &:hover{
+            opacity: .9;
+            cursor: pointer;
+        }
+
+    }
+    .inputs{
+        padding: 15px 0;
+        input{
+            border: 1px solid $grey;
+            border-radius: 5px;
+            background: #fafafa;
+            padding: 3px 5px;
+            @media (max-width: 575px) {
+                width: 40%;
+    }
+        }
+        .btn-call{
+            all: unset;
+            padding: 3px 10px ;
+            border-radius: 5px;
+            background: $green;
+            border: 1px solid $grey;
+            color: $white;
+            transition: .7s;
+            @media (max-width: 575px) {
+                padding: 2px 5px ;
+                font-size: 15px;
+    }
+            &:hover{
+                background: $blue;
+            }
+        }
+        h4{
+            display: inline-block;
+            @media (max-width: 575px) {
+        font-size: 24px;            
+    }
+        }
+    }
+    p{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+         @media (max-width: 550px) {
+            font-size: 15px;
+        
+    }
+    }
+
+}
+        }
+
+
