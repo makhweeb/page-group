@@ -46,64 +46,68 @@
 
                                 <li><a target="_blank"
                                        href="https://www.youtube.com/channel/UCwpj9bnR26XgRNxMROCL7eg?view_as=subscriber"
-                                       rel="nofollow"><img width="20px" src="./assets/imgs/youtube.png" alt=""> Youtube</a>
+                                       rel="nofollow"><img width="20px" src="{{ asset('img/youtube.png') }}" alt=""> Youtube</a>
                                 </li>
 
                                 <li><a target="_blank" href="https://vk.com/public171817049" rel="nofollow"><img
-                                                width="20px" src="./assets/imgs/wkontakte.png" alt=""> VK</a></li>
+                                                width="20px" src="{{ asset('img/vkontakte.png') }}" alt=""> VK</a></li>
 
 
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="white-title">Наши услуги:</div>
-                    <div class="footer-services">
-                        <div id="bxdynamic_g8taYv_start" style="display:none"></div>
-                        <ul>
-                            <li><a href="/uslugi/uborka_kvartir_v_sankt_peterburge/">Уборка квартир</a></li>
-                            <li><a href="/uslugi/uborka_ofisov/">Уборка офисов</a></li>
-                            <li><a href="/uslugi/uborka_posle_remonta_stroitelstva/">Клининг после ремонта</a></li>
-                            <li><a href="/uslugi/uborka_ofisov_posle_remonta/">Уборка офисов после ремонта</a></li>
-                            <li><a href="/uslugi/generalnaya_uborka/">Генеральный клининг</a></li>
-                            <li><a href="/uslugi/uborka_pomeshcheniy/">Уборка помещений</a></li>
-                        </ul>
 
-                        <div id="bxdynamic_g8taYv_end" style="display:none"></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="white-title">Наши услуги:</div>
+                        <div class="footer-services">
+                            <div id="bxdynamic_g8taYv_start" style="display:none"></div>
+                            <ul>
+                                <li><a href="/uslugi/uborka_kvartir_v_sankt_peterburge/">Уборка квартир</a></li>
+                                <li><a href="/uslugi/uborka_ofisov/">Уборка офисов</a></li>
+                                <li><a href="/uslugi/uborka_posle_remonta_stroitelstva/">Клининг после ремонта</a></li>
+                                <li><a href="/uslugi/uborka_ofisov_posle_remonta/">Уборка офисов после ремонта</a></li>
+                                <li><a href="/uslugi/generalnaya_uborka/">Генеральный клининг</a></li>
+                                <li><a href="/uslugi/uborka_pomeshcheniy/">Уборка помещений</a></li>
+                            </ul>
+
+                            <div id="bxdynamic_g8taYv_end" style="display:none"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="white-title color-trans" style="
-    color: #fff; opacity: 0; @media (max-width: 576px) {
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="white-title color-trans" style="
+    color: #fff; opacity: 0;@media (max-width: 576px) {
       display: none;
     }
 ">Наши услуги:
-                    </div>
-                    <div class="footer-services">
-                        <div id="bxdynamic_rIpOz9_start" style="display:none"></div>
-                        <ul>
-                            <li><a href="/uslugi/ezhednevnaya_uborka_/">Ежедневная уборка</a></li>
-                            <li><a href="/uslugi/moyka_fasadov/">Мойка фасадов</a></li>
-                            <li><a href="/uslugi/moyka_okon/">Мойка окон</a></li>
-                            <li><a href="/uslugi/uborka_skladskikh_pomeshcheniy/">Уборка складов</a></li>
-                            <li><a href="/uslugi/uborka_proizvodstvennykh_pomeshcheniy/">Уборка производств</a></li>
-                        </ul>
+                        </div>
+                        <div class="footer-services">
+                            <div id="bxdynamic_rIpOz9_start" style="display:none"></div>
+                            <ul>
+                                <li><a href="/uslugi/ezhednevnaya_uborka_/">Ежедневная уборка</a></li>
+                                <li><a href="/uslugi/moyka_fasadov/">Мойка фасадов</a></li>
+                                <li><a href="/uslugi/moyka_okon/">Мойка окон</a></li>
+                                <li><a href="/uslugi/uborka_skladskikh_pomeshcheniy/">Уборка складов</a></li>
+                                <li><a href="/uslugi/uborka_proizvodstvennykh_pomeshcheniy/">Уборка производств</a></li>
+                            </ul>
 
-                        <div id="bxdynamic_rIpOz9_end" style="display:none"></div>
+                            <div id="bxdynamic_rIpOz9_end" style="display:none"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="col-12 hidden-md-down"></div>
                     <div class="col-12">
-                        <div class="developer" style="justify-content: center;">
+                        <div class="col-12 hidden-md-down"></div>
+                        <div class="col-12">
+                            <div class="developer" style="justify-content: center;">
 
-                            <p class="text-center">© 2018—2022 Page Group <br><a href="#">Карта сайта</a></p>
+                                <p class="text-center">© 2018—2022 Page Group
+                                    <br>
+                                    <a href="#">Карта сайта</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
-            <div class="col-lg-1"></div>
         </div>
     </div>
 </footer>

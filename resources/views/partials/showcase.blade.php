@@ -23,7 +23,7 @@
         </div>
 
         <div class="show-right  ">
-            <img src="./assets/imgs/show-img.png" alt="showcase image">
+            <img src="{{ asset('img/show-img.png') }}" alt="showcase image">
         </div>
     </div>
 </section>

@@ -4,7 +4,7 @@
         <div class="header-top ">
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/imgs/logo.jpg" alt="logo">
+                    <img src="{{ asset('img/logo.jpg') }}" alt="logo">
                 </a>
             </div>
             <div class="location">
@@ -17,7 +17,7 @@
             <div class="email">
                 <a href="mailto: gsattorov0102@mail.ru">gsattorov0102@mail.ru</a>
             </div>
-            <div class="contact  ">
+            <div class="contact">
                 <a href="tel:+998900077611">8 (90) 007 76 11</a>
                 <a href="tel:+998900077611" class="phone-icon">
                     <i class="fas fa-phone-alt"></i>
@@ -26,7 +26,6 @@
                 <a class="btn button" href="#exampleModalToggle" role="button">
                     Заказать звонок
                 </a>
-
             </div>
             <div class="drop-menu">
                 <button class="navbar-toggler dropDown" type="button" data-bs-toggle="collapse"
