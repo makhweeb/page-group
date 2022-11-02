@@ -12,6 +12,7 @@ class Customer extends Model
     public $timestamps = false;
 
     protected $fillable = [
+        'name',
         'image',
         'content',
     ];

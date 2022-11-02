@@ -27,11 +27,17 @@ class PriceListResource extends Resource
                     ->label('Название')
                     ->autofocus()
                     ->required(),
-                Forms\Components\KeyValue::make('content')
+                Forms\Components\Repeater::make('content')
                     ->label('Цены')
-                    ->required()
                     ->columnSpan(2)
-                    ->rules('required'),
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->label('Название')
+                            ->required(),
+                        Forms\Components\TextInput::make('price')
+                            ->label('Цена')
+                            ->required(),
+                    ])
             ]);
     }
 

@@ -23,6 +23,10 @@ class CustomerResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\Textarea::make('name')
+                    ->required()
+                    ->autofocus()
+                    ->label('Имя'),
                 Forms\Components\FileUpload::make('image')
                     ->label('Изображение')
                     ->required()
@@ -37,6 +41,8 @@ class CustomerResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Имя'),
                 Tables\Columns\ImageColumn::make('image')
                     ->label('Изображение'),
             ]);
