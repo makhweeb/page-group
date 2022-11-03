@@ -13,14 +13,14 @@
                     <h3>{{ $post->title }}</h3>
 
                     <p>{{ $post->excerpt }}</p>
-                    <a href="./pages/news.html" role="button">
+                    <a href="{{ route('posts.show', $post->id) }}" role="button">
                         @lang('Read more')
                         <span></span>
                     </a>
                 </div>
             @endforeach
         </div>
-        <a class="btn-hov-eff" href="./stati.html">
+        <a class="btn-hov-eff" href="{{ route('posts.index') }}">
             Все новости
             <span class="blue-btn btn1"></span>
             <span class="blue-btn btn2"></span>

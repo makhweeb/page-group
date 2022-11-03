@@ -129,4 +129,3 @@
         </div>
     </div>
 </div>
-<div class="drop-close"></div>
