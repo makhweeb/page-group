@@ -33,7 +33,7 @@
                     {{ $locales[app()->getLocale()] }}
                 </a>
 
-                <a class="btn button" href="#exampleModalToggle" role="button">
+                <a class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" role="button">
                     @lang('Order a call')
                 </a>
             </div>
