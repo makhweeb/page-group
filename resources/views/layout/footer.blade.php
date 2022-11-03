@@ -7,21 +7,20 @@
                     <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                         <div class="white-title">Контактная информация</div>
                         <div class="contact-info">
-                            <div class="contact-info-phones">
+                            <div class="∆-phones">
                                 <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+78122425031"><span
                                                 class="new-phone">8 (812) 747-81-43</span></a></p></div>
                             <div class="contact-info-map">
                                 <p><i class="fas fa-map-marker-alt"></i>Санкт - Петербург, ул. Профессора Попова, д.8
                                 </p></div>
                             <div class="contact-info-mail selectMust">
-                                <p class="selectMust">
+                                <p class="selectMust d-flex">
                                     <i class="far fa-envelope"></i><a href="mailto:info9@cleanfield.ru"
                                                                       class="selectMust">info9@pagegroup.ru</a>
                                 </p></div>
                             <div class="contact-info-time">
-                                <i class="far fa-clock"></i>
-                                <p>
-                                    Ежедневно: <br>
+                                <p><i class="far fa-clock"></i>
+                                    Ежедневно:
                                     с 8-00 до 22-00
                                 </p></div>
                         </div>
@@ -46,7 +45,8 @@
 
                                 <li><a target="_blank"
                                        href="https://www.youtube.com/channel/UCwpj9bnR26XgRNxMROCL7eg?view_as=subscriber"
-                                       rel="nofollow"><img width="20px" src="{{ asset('img/youtube.png') }}" alt=""> Youtube</a>
+                                       rel="nofollow"><img width="20px" src="{{ asset('img/youtube.png') }}" alt="">
+                                        Youtube</a>
                                 </li>
 
                                 <li><a target="_blank" href="https://vk.com/public171817049" rel="nofollow"><img
