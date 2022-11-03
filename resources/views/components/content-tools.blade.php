@@ -1,3 +1,3 @@
-<div {{ $attributes }} data-editable data-file="{{ $file }}">
+<div {{ $attributes }} @auth data-editable @endauth data-file="{{ $file }}">
     {!! $content ?? $slot !!}
 </div>

@@ -74,6 +74,17 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="col-12">
+                        <div class="col-12 hidden-md-down"></div>
+                        <div class="col-12">
+                            <div class="developer" style="justify-content: center;">
+                                <x-data-content-tools file="footer-end.html">
+                                    <p data-ce-tag="p" class="text-center">© 2018—2022 Page Group</p>
+                                </x-data-content-tools>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -20,18 +20,16 @@
     <div class="modal-calling-con">
         <div class="modal-calling">
             <button class="close-calling">+</button>
-            <h4>
-                Хотите перезвоним вам за 40 секунд
-            </h4>
-            <p>Ты можете выбрать подразделение из которого вам перезвонит контекст</p>
+            <x-data-content-tools file="modal-call-form.html">
+                <h4>
+                    Хотите перезвоним вам за 40 секунд
+                </h4>
+                <p>Ты можете выбрать подразделение из которого вам перезвонит контекст</p>
+            </x-data-content-tools>
             <div class="inputs">
-                <input type="text">
-                <button class="btn-call">Жду звонка</button>
-                <h4 class="h4-timer">00:39</h4>
+                <input type="text" placeholder="+998 XX XXX XX XX">
+                <button class="btn-call">@lang('Submit')</button>
             </div>
-            <p>Свободных операторов на линии: 2</p>
-            <p>В процессе разговора с клиентоми: 0</p>
-            <p>Обслуживание вызовов за сегодня: 4</p>
         </div>
     </div>
     <div class="drop-close"></div>

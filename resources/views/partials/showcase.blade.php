@@ -19,20 +19,20 @@
                 </p>
             </x-data-content-tools>
 
-                <a class="btn-hov-eff" href="#">
-                    <x-data-content-tools file="showcase-hero-button.html">
-                        <div data-ce-tag="p">Оставьте заявку</div>
-                    </x-data-content-tools>
+            <a class="btn-hov-eff" href="#">
+                <x-data-content-tools file="showcase-hero-button.html">
+                    <div data-ce-tag="p">@lang('Leave a request')</div>
+                </x-data-content-tools>
 
-                    <span class="blue-btn btn1"></span>
-                    <span class="blue-btn btn2"></span>
-                    <span class="blue-btn btn3"></span>
-                    <span class="blue-btn btn4"></span>
-                </a>
+                <span class="blue-btn btn1"></span>
+                <span class="blue-btn btn2"></span>
+                <span class="blue-btn btn3"></span>
+                <span class="blue-btn btn4"></span>
+            </a>
         </div>
 
-        <div class="show-right  ">
+        <x-data-content-tools class="show-right" file="showcase-img.html">
             <img src="{{ asset('img/show-img.png') }}" alt="showcase image">
-        </div>
+        </x-data-content-tools>
     </div>
 </section>
