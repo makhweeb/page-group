@@ -4,45 +4,65 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-10 col-md-12 col-sm-12 col-12">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="white-title">Контактная информация</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="white-title">
+                            @lang('Contact information')
+                        </div>
                         <div class="contact-info">
-                            <div class="∆-phones">
-                                <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+78122425031"><span
-                                                class="new-phone">8 (812) 747-81-43</span></a></p></div>
+                            <div class="contact-info-phones">
+                                <p class="d-flex">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <x-data-content-tools file="contact-information-1.html">
+                                        <a data-ce-tag="p" href="tel:+78122425031"><span
+                                                    class="new-phone">8 (812) 747-81-43</span></a>
+                                    </x-data-content-tools>
+                                </p>
+                            </div>
                             <div class="contact-info-map">
-                                <p><i class="fas fa-map-marker-alt"></i>Санкт - Петербург, ул. Профессора Попова, д.8
-                                </p></div>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <x-data-content-tools file="contact-information-2.html">
+                                        <span data-ce-tag="p">Санкт - Петербург, ул. Профессора Попова, д.8</span>
+                                    </x-data-content-tools>
+                                </p>
+                            </div>
                             <div class="contact-info-mail selectMust">
                                 <p class="selectMust d-flex">
-                                    <i class="far fa-envelope"></i><a href="mailto:info9@cleanfield.ru"
-                                                                      class="selectMust">info9@pagegroup.ru</a>
-                                </p></div>
+                                    <i class="far fa-envelope"></i>
+                                    <x-data-content-tools file="contact-information-3.html">
+                                        <a data-ce-tag="p" href="mailto:info9@cleanfield.ru"
+                                           class="selectMust">info9@pagegroup.ru</a>
+                                    </x-data-content-tools>
+                                </p>
+                            </div>
                             <div class="contact-info-time">
-                                <p><i class="far fa-clock"></i>
-                                    Ежедневно:
-                                    с 8-00 до 22-00
-                                </p></div>
+                                <p>
+                                    <i class="far fa-clock"></i>
+                                    <x-data-content-tools file="contact-information-4.html">
+                                        <span data-ce-tag="p">Ежедневно: с 8-00 до 22-00</span>
+                                    </x-data-content-tools>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="white-title">Полезные разделы</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="white-title">
+                            @lang('Useful sections')
+                        </div>
                         <div class="footer-services">
                             <ul>
-                                <li><a href="#why_cleanfield">О нас</a></li>
-                                <li><a href="#reviews">Отзывы</a></li>
-                                <li><a href="#kontakt">Контакты</a></li>
-                                <li><a href="#question">Вопрос-ответ</a></li>
-                                <li><a href="./stati.html">Статьи</a></li>
+                                <li><a href="#why_cleanfield">@lang('About us')</a></li>
+                                <li><a href="#reviews">@lang('Reviews')</a></li>
+                                <li><a href="#kontakt">@lang('Contacts')</a></li>
+                                <li><a href="#question">@lang('Questions')</a></li>
+                                <li><a href="{{ route('posts.index') }}">@lang('News')</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="white-title">Мы в соц. сетях:</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="white-title">@lang('We are in the social networks:')</div>
                         <div class="social-icons">
-
                             <ul>
-
                                 <li><a target="_blank"
                                        href="https://www.youtube.com/channel/UCwpj9bnR26XgRNxMROCL7eg?view_as=subscriber"
                                        rel="nofollow"><img width="20px" src="{{ asset('img/youtube.png') }}" alt="">
@@ -51,62 +71,10 @@
 
                                 <li><a target="_blank" href="https://vk.com/public171817049" rel="nofollow"><img
                                                 width="20px" src="{{ asset('img/vkontakte.png') }}" alt=""> VK</a></li>
-
-
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="white-title">Наши услуги:</div>
-                        <div class="footer-services">
-                            <div id="bxdynamic_g8taYv_start" style="display:none"></div>
-                            <ul>
-                                <li><a href="/uslugi/uborka_kvartir_v_sankt_peterburge/">Уборка квартир</a></li>
-                                <li><a href="/uslugi/uborka_ofisov/">Уборка офисов</a></li>
-                                <li><a href="/uslugi/uborka_posle_remonta_stroitelstva/">Клининг после ремонта</a></li>
-                                <li><a href="/uslugi/uborka_ofisov_posle_remonta/">Уборка офисов после ремонта</a></li>
-                                <li><a href="/uslugi/generalnaya_uborka/">Генеральный клининг</a></li>
-                                <li><a href="/uslugi/uborka_pomeshcheniy/">Уборка помещений</a></li>
-                            </ul>
-
-                            <div id="bxdynamic_g8taYv_end" style="display:none"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="white-title color-trans" style="
-    color: #fff; opacity: 0;@media (max-width: 576px) {
-      display: none;
-    }
-">Наши услуги:
-                        </div>
-                        <div class="footer-services">
-                            <div id="bxdynamic_rIpOz9_start" style="display:none"></div>
-                            <ul>
-                                <li><a href="/uslugi/ezhednevnaya_uborka_/">Ежедневная уборка</a></li>
-                                <li><a href="/uslugi/moyka_fasadov/">Мойка фасадов</a></li>
-                                <li><a href="/uslugi/moyka_okon/">Мойка окон</a></li>
-                                <li><a href="/uslugi/uborka_skladskikh_pomeshcheniy/">Уборка складов</a></li>
-                                <li><a href="/uslugi/uborka_proizvodstvennykh_pomeshcheniy/">Уборка производств</a></li>
-                            </ul>
-
-                            <div id="bxdynamic_rIpOz9_end" style="display:none"></div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="col-12 hidden-md-down"></div>
-                        <div class="col-12">
-                            <div class="developer" style="justify-content: center;">
-
-                                <p class="text-center">© 2018—2022 Page Group
-                                    <br>
-                                    <a href="#">Карта сайта</a>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
             </div>
         </div>
     </div>

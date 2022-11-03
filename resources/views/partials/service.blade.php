@@ -1,7 +1,7 @@
 <section id="n-usluga">
     <div class="container">
         <h1 class="title">
-            Наши услуги
+            @lang('Our services')
         </h1>
         <div class="n-items">
             @foreach($services as $service)

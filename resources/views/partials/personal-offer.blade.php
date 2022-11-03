@@ -2,11 +2,16 @@
     <div class="container">
         <div class="p-wrapper">
             <div class="left">
-                <h2>
-                    Подготовим персональное <br>предложение для вашей компании
-                </h2>
+                <x-data-content-tools file="personal-offer-title.html">
+                    <h2>
+                        Подготовим персональное <br>предложение для вашей компании
+                    </h2>
+                </x-data-content-tools>
+
                 <a class="btn-hov-eff" href="#">
-                    Оставьте заявку
+                    <x-data-content-tools file="personal-offer-button.html">
+                        <div data-ce-tag="p">Оставьте заявку</div>
+                    </x-data-content-tools>
                     <span class="blue-btn btn1"></span>
                     <span class="blue-btn btn2"></span>
                     <span class="blue-btn btn3"></span>

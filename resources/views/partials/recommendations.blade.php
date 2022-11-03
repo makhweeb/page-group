@@ -2,11 +2,12 @@
     <div class="container">
         <div class="p-wrapper">
             <div class="left">
-                <h2>
-                    Не знаете с чего начать? <br>Оставьте заявку и мы расскажем!
-                </h2>
+                <x-data-content-tools file="recommendations.html">
+                    <h2>Не знаете с чего начать? <br>Оставьте заявку и мы расскажем!</h2>
+                </x-data-content-tools>
+
                 <a class="btn-hov-eff" href="#">
-                    Оставьте заявку
+                    @lang('Leave a request')
                     <span class="blue-btn btn1"></span>
                     <span class="blue-btn btn2"></span>
                     <span class="blue-btn btn3"></span>

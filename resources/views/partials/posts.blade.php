@@ -1,10 +1,12 @@
 <section id="news">
     <h1 class="title">
-        Новости и события
+        @lang('News')
     </h1>
-    <p class="text">
-        Новости и события клининговой компании CleanField
-    </p>
+    <x-data-content-tools file="news.html">
+        <p class="text">
+            Новости и события клининговой компании CleanField
+        </p>
+    </x-data-content-tools>
     <div class="container">
         <div class="news-cards">
             @foreach($posts as $post)
@@ -21,7 +23,7 @@
             @endforeach
         </div>
         <a class="btn-hov-eff" href="{{ route('posts.index') }}">
-            Все новости
+            @lang('All news')
             <span class="blue-btn btn1"></span>
             <span class="blue-btn btn2"></span>
             <span class="blue-btn btn3"></span>

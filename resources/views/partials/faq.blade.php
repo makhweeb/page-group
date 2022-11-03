@@ -1,9 +1,9 @@
 <section id="question">
     <h1 class="title">
-        Вопросы и ответы
+        @lang('Questions')
     </h1>
     <p class="text">
-        Мнения клиентов о работе нашей компании
+        @lang('Questions text')
     </p>
     <div class="container">
         <div class="accordion  accordion-flush" id="accordionFlushExample">

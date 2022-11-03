@@ -1,6 +1,8 @@
 <section id="our-client">
     <div class="container">
-        <h1 class="title">Наши клиенты</h1>
+        <h1 class="title">
+            @lang('Our clients')
+        </h1>
         <div class="client-body">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">

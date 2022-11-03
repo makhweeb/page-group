@@ -3,7 +3,9 @@
 @endphp
 
 <section id="price">
-    <h1 class="title">Цены на клининг</h1>
+    <h1 class="title">
+        @lang('Price list')
+    </h1>
     <div class="container">
         <div class="price-list">
             <div class="accordion  accordion-flush" id="accordionFlushExample">

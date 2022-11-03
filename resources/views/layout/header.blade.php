@@ -7,21 +7,23 @@
                     <img src="{{ asset('img/logo.jpg') }}" alt="logo">
                 </a>
             </div>
-            <div class="location">
+            <div class="location d-flex">
                 <p class="p-0 m-0">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Санкт-Петербург, ул. Профессора Попова, д.8
+                    <i class="fas fa-map-marker-alt pe-2"></i>
+                    <x-data-content-tools file="header-information-1.html">
+                        <span data-ce-tag="p">Санкт-Петербург, ул. Профессора Попова, д.8</span>
+                    </x-data-content-tools>
                 </p>
             </div>
 
-            <div class="email">
-                <a href="mailto: gsattorov0102@mail.ru">gsattorov0102@mail.ru</a>
-            </div>
             <div class="contact">
-                <a href="tel:+998900077611">8 (90) 007 76 11</a>
-                <a href="tel:+998900077611" class="phone-icon">
-                    <i class="fas fa-phone-alt"></i>
-                </a>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+
+                <x-data-content-tools file="header-information-2.html">
+                    <a data-ce-tag="p" href="tel:+998900077611">
+                        8 (90) 007 76 11
+                    </a>
+                </x-data-content-tools>
 
                 <a class="btn button" href="#exampleModalToggle" role="button">
                     Заказать звонок
@@ -42,7 +44,6 @@
                     <li><a href="#n-usluga">Услуги</a></li>
                     <li><a href="#price">Цены</a></li>
                     <li><a href="#">Наши работы</a></li>
-                    <li><a href="#">Акции</a></li>
                     <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#kontakt">Контакты</a></li>
                     <li><a href="./stati.html">Статьи</a></li>

@@ -3,8 +3,14 @@
 @endphp
 
 <section id="reviews">
-    <h1 class="title">Отзывы</h1>
-    <p class="text">Мнения клиентов о работе нашей компании</p>
+    <h1 class="title">
+        @lang('Reviews')
+    </h1>
+    <x-data-content-tools file="reviews-desc.html">
+        <p class="text">
+            Reviews text
+        </p>
+    </x-data-content-tools>
     <div class="container">
         <div class="r-cards">
             @foreach($reviews as $review)
@@ -18,12 +24,5 @@
                 </div>
             @endforeach
         </div>
-        <a class="btn-hov-eff d-block m-auto mt-5 text-center" href="">
-            Все отзывы
-            <span class="blue-btn btn1"></span>
-            <span class="blue-btn btn2"></span>
-            <span class="blue-btn btn3"></span>
-            <span class="blue-btn btn4"></span>
-        </a>
     </div>
 </section>
