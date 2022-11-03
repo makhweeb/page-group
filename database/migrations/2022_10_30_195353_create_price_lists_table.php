@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('price_lists', function (Blueprint $table) {
             $table->id();
-            $table->json('name');
+            $table->json('language');
             $table->json('content');
         });
     }

@@ -7,28 +7,18 @@
     </p>
     <div class="container">
         <div class="news-cards">
-            <div class="news-card">
-                <img src="https://cleanfield.ru/art/photo_news-1.jpg" alt="">
-                <h3>Секреты мытья окон без разводов</h3>
+            @foreach($posts as $post)
+                <div class="news-card">
+                    <img src="{{ asset($post->image) }}" alt="">
+                    <h3>{{ $post->title }}</h3>
 
-                <p> Говорят, что самый лучший телевизор с максимально реалистичным изображением – это хорошо вымытые
-                    окна. Пожалуй, это как раз тот случай, когда в шутке лишь доля шутки. </p>
-                <a href="./pages/news.html" role="button">
-                    Читать новость
-                    <span></span>
-                </a>
-            </div>
-            <div class="news-card">
-                <img src="https://cleanfield.ru/art/photo_news-1.jpg" alt="">
-                <h3>Секреты мытья окон без разводов</h3>
-
-                <p> Говорят, что самый лучший телевизор с максимально реалистичным изображением – это хорошо вымытые
-                    окна. Пожалуй, это как раз тот случай, когда в шутке лишь доля шутки. </p>
-                <a href="./pages/news.html" role="button">
-                    Читать новость
-                    <span></span>
-                </a>
-            </div>
+                    <p>{{ $post->excerpt }}</p>
+                    <a href="./pages/news.html" role="button">
+                        @lang('Read more')
+                        <span></span>
+                    </a>
+                </div>
+            @endforeach
         </div>
         <a class="btn-hov-eff" href="./stati.html">
             Все новости

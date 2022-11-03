@@ -24,6 +24,7 @@
 @include('partials.leave-form')
 @include('partials.faq')
 @include('partials.recommendations')
+@include('partials.posts')
 @include('partials.info')
 @include('partials.contacts')
 @include('partials.leave-form')

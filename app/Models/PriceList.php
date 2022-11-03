@@ -3,18 +3,17 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 class PriceList extends Model
 {
-    use HasTranslations;
-
     public $timestamps = false;
 
     protected $fillable = [
-        'name',
+        'language',
         'content',
     ];
 
-    public $translatable = ['name', 'content'];
+    protected $casts = [
+        'content' => 'array',
+    ];
 }
