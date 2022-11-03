@@ -12,26 +12,22 @@
                             <div class="contact-info-phones">
                                 <p class="d-flex">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <x-data-content-tools file="contact-information-1.html">
-                                        <a data-ce-tag="p" href="tel:+78122425031"><span
-                                                    class="new-phone">8 (812) 747-81-43</span></a>
-                                    </x-data-content-tools>
+                                    <a href="tel:+{{ $siteSettings->phone }}"><span
+                                                class="new-phone">{{ $siteSettings->phone }}</span></a>
                                 </p>
                             </div>
                             <div class="contact-info-map">
                                 <p>
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <x-data-content-tools file="contact-information-2.html">
-                                        <span data-ce-tag="p">Санкт - Петербург, ул. Профессора Попова, д.8</span>
-                                    </x-data-content-tools>
+                                    <span>{{ $siteSettings->address }}</span>
                                 </p>
                             </div>
                             <div class="contact-info-mail selectMust">
                                 <p class="selectMust d-flex">
                                     <i class="far fa-envelope"></i>
                                     <x-data-content-tools file="contact-information-3.html">
-                                        <a data-ce-tag="p" href="mailto:info9@cleanfield.ru"
-                                           class="selectMust">info9@pagegroup.ru</a>
+                                        <a data-ce-tag="p" href="mailto:{{ $siteSettings->email }}"
+                                           class="selectMust">{{ $siteSettings->email }}</a>
                                     </x-data-content-tools>
                                 </p>
                             </div>
@@ -55,7 +51,7 @@
                                 <li><a href="#reviews">@lang('Reviews')</a></li>
                                 <li><a href="#kontakt">@lang('Contacts')</a></li>
                                 <li><a href="#question">@lang('Questions')</a></li>
-                                <li><a href="{{ route('posts.index') }}">@lang('News')</a></li>
+                                <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +76,8 @@
                         <div class="col-12">
                             <div class="developer" style="justify-content: center;">
                                 <x-data-content-tools file="footer-end.html">
-                                    <p data-ce-tag="p" class="text-center">© 2018—2022 Page Group</p>
+                                    <p data-ce-tag="p" class="text-center">©
+                                        2018—2022 {{ $siteSettings->site_name }}</p>
                                 </x-data-content-tools>
                             </div>
                         </div>

@@ -4,48 +4,33 @@
         <div class="header-top ">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset('img/logo.jpg') }}" alt="logo">
+                    <img src="{{ asset($siteSettings->site_logo) }}" alt="logo">
                 </a>
             </div>
-            <div class="location d-flex">
+            <div class="location">
                 <p class="p-0 m-0">
-                    <i class="fas fa-map-marker-alt pe-2"></i>
-                    <x-data-content-tools file="header-information-1.html">
-                        <span data-ce-tag="p">Санкт-Петербург, ул. Профессора Попова, д.8</span>
-                    </x-data-content-tools>
+                    <i class="fas fa-map-marker-alt"></i>
+                    {{ $siteSettings->address }}
                 </p>
             </div>
 
             <div class="contact">
-                <div class="d-flex">
-                    <x-data-content-tools file="header-information-2.html">
-                        <div class="d-flex align-items-center">
-                            <i class="fa fa-phone d-none d-sm-block" aria-hidden="true"></i>
-
-                            <a data-ce-tag="p" href="tel:+998900077611">
-                                8 (90) 007 76 11
-                            </a>
-                        </div>
-
-                        <a data-ce-tag="p" href="tel:+998900077611" class="phone-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </a>
-                    </x-data-content-tools>
-                </div>
-
-                <a class="btn btn-link" href="/set">
-                     O'zbek tili 🇺🇿
+                <a href="tel:{{ $siteSettings->phone }}">{{ $siteSettings->phone }}</a>
+                <a href="tel:{{ $siteSettings->phone }}" class="phone-icon">
+                    <i class="fas fa-phone-alt"></i>
                 </a>
 
-                <a class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" role="button">
-                    Заказать звонок
+                <a class="btn btn-link" href="/set">
+                    O'zbek tili 🇺🇿
+                </a>
+
+                <a class="btn button" href="#exampleModalToggle" role="button">
+                    @lang('Order a call')
                 </a>
             </div>
             <div class="drop-menu">
-                <button class="navbar-toggler dropDown" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <i class="fas fa-bars x-menu "></i>
+                <button class="navbar-toggler dropDown collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas x-menu fa-bars"></i>
                 </button>
             </div>
         </div>
@@ -62,7 +47,6 @@
                     <li><a href="#question">@lang('FAQ')</a></li>
                 </ul>
             </nav>
-
         </div>
     </div>
 </header>
