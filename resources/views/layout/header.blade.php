@@ -93,10 +93,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </span>
                 <div class="modal-body">
-                    <form action="">
-                        <input type="text" class="input-text" placeholder="@lang('Your name')">
-                        <input type="number" class="input-text" placeholder="@lang('Your phone')"> <br>
-                        <input type="checkbox" class="checkbox-input" name="#" id="checked">
+                    <form method="POST" action="{{ route('form') }}">
+                        @csrf
+                        <input type="hidden" name="type" value="general_request">
+                        <input type="text" class="input-text" name="name" placeholder="@lang('Your name')">
+                        <input type="number" class="input-text" name="phone" placeholder="@lang('Your phone')"> <br>
+                        <input type="checkbox" class="checkbox-input" id="checked">
                         <label>
                             <x-data-content-tools file="header-modal-checkbox.html">
                                 <div data-ce-tag="p">

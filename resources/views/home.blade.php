@@ -32,10 +32,12 @@
                 </h4>
                 <p>Ты можете выбрать подразделение из которого вам перезвонит контекст</p>
             </x-data-content-tools>
-            <div class="inputs">
-                <input type="text" placeholder="+998 XX XXX XX XX">
+            <form method="POST" action="{{ route('form') }}" class="inputs">
+                @csrf
+                <input type="hidden" name="type" value="call_request">
+                <input type="text" name="phone" placeholder="+998 XX XXX XX XX">
                 <button class="btn-call">@lang('Submit')</button>
-            </div>
+            </form>
         </div>
     </div>
     <div class="drop-close"></div>

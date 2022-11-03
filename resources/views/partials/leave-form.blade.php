@@ -15,8 +15,9 @@
             <img src="https://cleanfield.ru/art/wash2.png" alt="">
         </div>
         <div class="l-f-body">
-            <form method="post" novalidate="novalidate">
-
+            <form method="post" action="{{ route('form') }}" novalidate="novalidate">
+                @csrf
+                <input type="hidden" name="type" value="general_request">
                 <div class="input-group">
                     <div class="l-f-input-container ">
                         <input type="text" name="name" class="l-f-input required-input" required>
@@ -29,7 +30,7 @@
                         </p>
                     </div>
                     <div class="l-f-input-container required">
-                        <input type="number" name="number" class="l-f-input required-input" required>
+                        <input type="number" name="phone" class="l-f-input required-input" required>
                         <div class="l-f-label">
                             @lang('Phone number')
                             <span>*</span>

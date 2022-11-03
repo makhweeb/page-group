@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContentToolsController;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\PostController;
@@ -21,6 +22,7 @@ Route::get('/', HomeController::class)->name('home');
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 Route::get('/locale/{locale}', LocaleController::class)->name('locale');
+Route::post('/form', FormController::class)->name('form');
 
 // Content tools
 Route::prefix('/content-tools')->group(function () {
