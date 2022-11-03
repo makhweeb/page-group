@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContentToolsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeController::class)->name('home');
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/locale/{locale}', LocaleController::class)->name('locale');
 
 // Content tools
 Route::prefix('/content-tools')->group(function () {

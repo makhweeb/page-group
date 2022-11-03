@@ -1,5 +1,11 @@
 @extends('layout.app')
 
+@include('partials.meta', [
+    'title' => __('Articles') . ' - ' .  $siteSettings->site_name,
+    'description' => $siteSettings->getTranslated('site_description'),
+    'image' => asset($siteSettings->og_image)
+])
+
 @section('content')
     <section id="stati">
         <h1 class="gray-title">

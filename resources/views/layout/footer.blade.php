@@ -19,7 +19,7 @@
                             <div class="contact-info-map">
                                 <p>
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>{{ $siteSettings->address }}</span>
+                                    <span>{{ $siteSettings->getTranslated('address') }}</span>
                                 </p>
                             </div>
                             <div class="contact-info-mail selectMust">

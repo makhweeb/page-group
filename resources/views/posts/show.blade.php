@@ -1,5 +1,11 @@
 @extends('layout.app')
 
+@include('partials.meta', [
+    'title' => $post->title . ' - ' .  $siteSettings->site_name,
+    'description' => $post->excerpt,
+    'image' => asset($post->image)
+])
+
 @section('content')
     <section id="pravila-uborka">
         <h1 class="gray-title">

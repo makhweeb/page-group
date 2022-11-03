@@ -1,3 +1,12 @@
+@php
+    $locales = [
+        'ru' => "O'zbek tili 🇺🇿",
+        'uz' => "Русский язык 🇷🇺",
+    ];
+
+    $langToSwitch = app()->getLocale() === 'ru' ? 'uz' : 'ru';
+@endphp
+
 {{-- Header --}}
 <header class="bg-white">
     <div class="container header-container">
@@ -10,7 +19,7 @@
             <div class="location">
                 <p class="p-0 m-0">
                     <i class="fas fa-map-marker-alt"></i>
-                    {{ $siteSettings->address }}
+                    {{ $siteSettings->getTranslated('address') }}
                 </p>
             </div>
 
@@ -20,8 +29,8 @@
                     <i class="fas fa-phone-alt"></i>
                 </a>
 
-                <a class="btn btn-link" href="/set">
-                    O'zbek tili 🇺🇿
+                <a class="btn btn-link fw-bold" style="font-size: 14px" href="{{ route('locale', $langToSwitch) }}">
+                    {{ $locales[app()->getLocale()] }}
                 </a>
 
                 <a class="btn button" href="#exampleModalToggle" role="button">
@@ -29,7 +38,9 @@
                 </a>
             </div>
             <div class="drop-menu">
-                <button class="navbar-toggler dropDown collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler dropDown collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <i class="fas x-menu fa-bars"></i>
                 </button>
             </div>
@@ -65,6 +76,7 @@
                     <li><a href="#kontakt">@lang('Contacts')</a></li>
                     <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>
                     <li><a href="#question">@lang('FAQ')</a></li>
+                    <li><a href="{{ route('locale', $langToSwitch) }}">{{ $locales[app()->getLocale()] }}</a></li>
                 </ul>
             </div>
         </div>
