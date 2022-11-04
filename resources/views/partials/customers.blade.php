@@ -41,7 +41,7 @@
         </div>
         <div style="text-align: center; margin: 50px auto;">
             <a class="btn-hov-eff d-inline-block text-center" href="#">
-                Оставьте заявку
+                @lang('Leave a request')
                 <span class="blue-btn btn1"></span>
                 <span class="blue-btn btn2"></span>
                 <span class="blue-btn btn3"></span>

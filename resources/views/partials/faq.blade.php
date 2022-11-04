@@ -2,9 +2,11 @@
     <h1 class="title">
         @lang('Questions')
     </h1>
-    <p class="text">
-        @lang('Questions text')
-    </p>
+    <x-data-content-tools file="faq-desc.html">
+        <p class="text">
+            Questions text
+        </p>
+    </x-data-content-tools>
     <div class="container">
         <div class="accordion  accordion-flush" id="accordionFlushExample">
             @foreach($faqs as $faq)
@@ -19,7 +21,8 @@
                     </span>
                         </button>
                     </h2>
-                    <div id="{{ 'flush-collapseOne' . $faq->id }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="{{ 'flush-collapseOne' . $faq->id }}" class="accordion-collapse collapse"
+                         aria-labelledby="flush-headingOne"
                          data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             {{ $faq->answer }}

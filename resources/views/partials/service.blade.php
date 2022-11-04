@@ -10,7 +10,7 @@
 
                     <p>{{ $service->name }}</p>
                     <a href="#" data-bs-toggle="modal" data-bs-target="{{ '#podrobniBtn' . $service->id }}" role="button">
-                        Подробнее
+                        @lang('Read more')
                         <span></span>
                     </a>
                 </div>

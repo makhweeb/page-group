@@ -1,6 +1,6 @@
 <section id="news">
     <h1 class="title">
-        @lang('News')
+        @lang('Articles')
     </h1>
     <x-data-content-tools file="news.html">
         <p class="text">

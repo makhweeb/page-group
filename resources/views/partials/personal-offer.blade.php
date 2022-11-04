@@ -9,9 +9,7 @@
                 </x-data-content-tools>
 
                 <a class="btn-hov-eff" href="#">
-                    <x-data-content-tools file="personal-offer-button.html">
-                        <div data-ce-tag="p">Оставьте заявку</div>
-                    </x-data-content-tools>
+                    @lang('Leave a request')
                     <span class="blue-btn btn1"></span>
                     <span class="blue-btn btn2"></span>
                     <span class="blue-btn btn3"></span>
