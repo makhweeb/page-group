@@ -48,14 +48,14 @@
         <div class="header-bottom">
             <nav>
                 <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
-                    <li><a href="#why_cleanfield">@lang('About us')</a></li>
-                    <li><a href="#n-usluga">@lang('Services')</a></li>
-                    <li><a href="#price">@lang('Prices')</a></li>
-                    <li><a href="#">@lang('Our works')</a></li>
-                    <li><a href="#reviews">@lang('Reviews')</a></li>
-                    <li><a href="#kontakt">@lang('Contacts')</a></li>
+                    <li><a href="/#why_cleanfield">@lang('About us')</a></li>
+                    <li><a href="/#n-usluga">@lang('Services')</a></li>
+                    <li><a href="/#price">@lang('Prices')</a></li>
+                    <li><a href="/#our-client">@lang('Our works')</a></li>
+                    <li><a href="/#reviews">@lang('Reviews')</a></li>
+                    <li><a href="/#kontakt">@lang('Contacts')</a></li>
                     <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>
-                    <li><a href="#question">@lang('FAQ')</a></li>
+                    <li><a href="/#question">@lang('FAQ')</a></li>
                 </ul>
             </nav>
         </div>
@@ -68,14 +68,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <ul class="mini-nav">
-                    <li><a href="#why_cleanfield">@lang('About us')</a></li>
-                    <li><a href="#n-usluga">@lang('Services')</a></li>
-                    <li><a href="#price">@lang('Prices')</a></li>
-                    <li><a href="#">@lang('Our works')</a></li>
-                    <li><a href="#reviews">@lang('Reviews')</a></li>
-                    <li><a href="#kontakt">@lang('Contacts')</a></li>
+                    <li><a href="/#why_cleanfield">@lang('About us')</a></li>
+                    <li><a href="/#n-usluga">@lang('Services')</a></li>
+                    <li><a href="/#price">@lang('Prices')</a></li>
+                    <li><a href="/#our-client">@lang('Our works')</a></li>
+                    <li><a href="/#reviews">@lang('Reviews')</a></li>
+                    <li><a href="/#kontakt">@lang('Contacts')</a></li>
                     <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>
-                    <li><a href="#question">@lang('FAQ')</a></li>
+                    <li><a href="/#question">@lang('FAQ')</a></li>
                     <li><a href="{{ route('locale', $langToSwitch) }}">{{ $locales[app()->getLocale()] }}</a></li>
                 </ul>
             </div>

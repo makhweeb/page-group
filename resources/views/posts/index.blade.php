@@ -9,7 +9,7 @@
 @section('content')
     <section id="stati">
         <h1 class="gray-title">
-            @lang('Posts')
+            @lang('Articles')
         </h1>
         <div class="container">
             <div class="stati-cards">
