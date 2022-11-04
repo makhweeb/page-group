@@ -12,6 +12,8 @@ class ManageSite extends SettingsPage
 
     protected static string $settings = GeneralSettings::class;
 
+    protected static ?string $navigationLabel = 'Настройки сайта';
+
     protected function getFormSchema(): array
     {
         return [
