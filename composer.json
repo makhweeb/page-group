@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "ext-pdo_sqlite": "*",
         "filament/filament": "^2.0",
         "filament/spatie-laravel-settings-plugin": "^2.0",
         "filament/spatie-laravel-translatable-plugin": "^2.0",
