@@ -3,7 +3,7 @@
 @include('partials.meta', [
     'title' => $post->title . ' - ' .  $siteSettings->site_name,
     'description' => $post->excerpt,
-    'image' => asset($post->image)
+    'image' => storage_url($post->image)
 ])
 
 @section('content')
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="pravila-cards">
                 <div class="pravila-card">
-                    <img src="{{ asset($post->image) }}" alt="">
+                    <img src="{{ storage_url($post->image) }}" alt="">
                     <div>
                         {!! $post->content !!}
                     </div>

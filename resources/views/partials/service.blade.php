@@ -6,7 +6,7 @@
         <div class="n-items">
             @foreach($services as $service)
                 <div class="n-item">
-                    <img src="{{ asset($service->image) }}" alt="">
+                    <img src="{{ storage_url($service->image) }}" alt="">
 
                     <p>{{ $service->name }}</p>
                     <a href="#" data-bs-toggle="modal" data-bs-target="{{ '#podrobniBtn' . $service->id }}" role="button">

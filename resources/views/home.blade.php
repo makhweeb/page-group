@@ -3,7 +3,7 @@
 @include('partials.meta', [
     'title' => $siteSettings->site_name,
     'description' => $siteSettings->getTranslated('site_description'),
-    'image' => asset($siteSettings->og_image)
+    'image' => storage_url($siteSettings->og_image)
 ])
 
 @section('content')

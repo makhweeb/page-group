@@ -10,7 +10,7 @@
                         <div class="carousel-item {{ $loop->index === 0 ? 'active' : '' }}">
                             <div class="carousel-card ">
                                 <div class="carousel-img">
-                                    <img src="{{ asset($customer->image) }}"
+                                    <img src="{{ storage_url($customer->image) }}"
                                          alt="image">
                                 </div>
                                 <div class="carousel-desc">

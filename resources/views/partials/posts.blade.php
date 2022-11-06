@@ -11,7 +11,7 @@
         <div class="news-cards">
             @foreach($posts as $post)
                 <div class="news-card">
-                    <img src="{{ asset($post->image) }}" alt="">
+                    <img src="{{ storage_url($post->image) }}" alt="">
                     <h3>{{ $post->title }}</h3>
 
                     <p>{{ $post->excerpt }}</p>

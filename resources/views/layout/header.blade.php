@@ -13,7 +13,7 @@
         <div class="header-top ">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset($siteSettings->site_logo) }}" alt="logo">
+                    <img src="{{ storage_url($siteSettings->site_logo) }}" alt="logo">
                 </a>
             </div>
             <div class="location">
