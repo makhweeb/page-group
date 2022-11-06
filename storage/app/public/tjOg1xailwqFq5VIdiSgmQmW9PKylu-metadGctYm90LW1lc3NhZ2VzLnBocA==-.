@@ -1,0 +1,40 @@
+<?php
+
+[
+    "ASK_PHONE" => [
+        "uz" => "Telefon raqamingizni kiriting",
+        "ru" => "Введите номер телефона",
+        "en" => "Enter your phone number"
+    ],
+    "ASK_LANGUAGE" => "Tilni tanlang | Выберите язык | Choose language",
+    "ASK_NAME" => [
+        "uz" => "Ismingizni kiriting",
+        "ru" => "Введите ваше имя",
+        "en" => "Enter your name"
+    ],
+    "ASK_PHONE_BUTTON" => [
+        "uz" => "*Telefon raqamingizni quyidagi formatda kiriting yoki yuboring:* \n\n +998 XX XXX XX XX",
+        "ru" => "*Отправьте или введите ваш номер телефона в виде:* \n\n +998 XX XXX XX XX",
+        "en" => "*Send or enter your phone number in the form:* \n\n +998 XX XXX XX XX"
+    ],
+    "FINISH" => [
+        "uz" => "Tabriklaymiz! Siz muvaffaqiyatli ro'yhatdan o'tdingiz",
+        "ru" => "Поздравляем! Вы успешно зарегистрировались",
+        "en" => "Congratulations! You have successfully registered"
+    ],
+    "ASK_REGION" => [
+        "uz" => "Viloyatni tanlang",
+        "ru" => "Выберите область",
+        "en" => "Select an region"
+    ],
+    "ASK_DISTRICT" => [
+        "uz" => "Tumanni tanlang",
+        "ru" => "Выберите район",
+        "en" => "Select an district",
+    ],
+    "PHONE_BUTTON" => [
+        "uz" => "Mening raqamim",
+        "ru" => "Мой номер",
+        "en" => "My number"
+    ],
+];

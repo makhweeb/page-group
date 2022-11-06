@@ -1,0 +1,5 @@
+slug: about
+name_uz: 'Biz haqimizda'
+name_ru: 'О нас'
+content_uz: '[CONTENT]'
+content_ru: '[CONTENT]'
