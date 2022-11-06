@@ -51,7 +51,7 @@
                     <li><a href="/#why_cleanfield">@lang('About us')</a></li>
                     <li><a href="/#n-usluga">@lang('Services')</a></li>
                     <li><a href="/#price">@lang('Prices')</a></li>
-                    <li><a href="/#our-client">@lang('Our works')</a></li>
+                    <li><a href="/#our-client">@lang('Our clients')</a></li>
                     <li><a href="/#reviews">@lang('Reviews')</a></li>
                     <li><a href="/#kontakt">@lang('Contacts')</a></li>
                     <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>
@@ -71,7 +71,7 @@
                     <li><a href="/#why_cleanfield">@lang('About us')</a></li>
                     <li><a href="/#n-usluga">@lang('Services')</a></li>
                     <li><a href="/#price">@lang('Prices')</a></li>
-                    <li><a href="/#our-client">@lang('Our works')</a></li>
+                    <li><a href="/#our-client">@lang('Our clients')</a></li>
                     <li><a href="/#reviews">@lang('Reviews')</a></li>
                     <li><a href="/#kontakt">@lang('Contacts')</a></li>
                     <li><a href="{{ route('posts.index') }}">@lang('Articles')</a></li>

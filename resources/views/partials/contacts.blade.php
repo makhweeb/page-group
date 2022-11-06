@@ -10,24 +10,27 @@
         <div class="k-cards">
             <div class="k-card">
                 <img src="https://cleanfield.ru/art/pic_phone.png" alt="">
-                <x-data-content-tools file="contacts-phone.html">
-                    <p>звоните</p>
-                    <a data-ce-tag="p" href="tel: +998900077611">8 (812) 426-73-40</a>
-                </x-data-content-tools>
+                <p>@lang('validation.attributes.phone')</p>
+
+                <a href="tel: {{ $siteSettings->phone }}">
+                    {{ $siteSettings->phone }}
+                </a>
             </div>
             <div class="k-card">
                 <img src="https://cleanfield.ru/art/pic_mail.png" alt="">
-                <x-data-content-tools file="contacts-mail.html">
-                    <p>звоните</p>
-                    <a data-ce-tag="p" href="mailto:info8@cleanfield.ru" class="selectMust">info9@PageGroup.ru</a>
-                </x-data-content-tools>
+                <p>@lang('validation.attributes.email')</p>
+
+                <a href="mailto: {{ $siteSettings->email }}">
+                    {{ $siteSettings->email }}
+                </a>
             </div>
             <div class="k-card">
                 <img src="https://cleanfield.ru/art/pic_pin.png" alt="">
-                <x-data-content-tools file="contacts-address.html">
-                    <p>звоните</p>
-                    <a data-ce-tag="p" href="#" class="k-black">г. Санкт-Петербург, <br> ул. Профессора поповова, д. 8</a>
-                </x-data-content-tools>
+                <p>@lang('validation.attributes.address')</p>
+
+                <a class="k-black" href="#">
+                    {{ $siteSettings->getTranslated('address') }}
+                </a>
             </div>
         </div>
     </div>

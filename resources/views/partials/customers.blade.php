@@ -10,17 +10,11 @@
                         <div class="carousel-item {{ $loop->index === 0 ? 'active' : '' }}">
                             <div class="carousel-card ">
                                 <div class="carousel-img">
-                                    <img src="https://cleanfield.ru/upload/iblock/d38/ywwnj5fc1p2m2myrktd4z9s4g9x3e26v.jpg"
-                                         alt="First slide">
+                                    <img src="{{ asset($customer->image) }}"
+                                         alt="image">
                                 </div>
                                 <div class="carousel-desc">
-                                    <ul>
-                                        <li>Мытье стеклянных и зеркальных поверхностей`</li>
-                                        <li>Обеспыливание и мытье пола, стен и осветительного оборудования</li>
-                                        <li>Химчистка мебели и ковровых покрытий</li>
-                                        <li>Мойка и дезинфекция сан узлов</li>
-                                        <li>Чистка и обезжиривание кухонного оборудования</li>
-                                    </ul>
+                                    {!! nl2br(e($customer->content)) !!}
                                 </div>
                             </div>
                         </div>

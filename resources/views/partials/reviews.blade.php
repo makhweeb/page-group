@@ -14,8 +14,8 @@
     <div class="container">
         <div class="r-cards">
             @foreach($reviews as $review)
-                <div class="r-card {{ $colors[array_rand($colors)] }}">
-                    <p class="r-card-title">
+                <div class="r-card">
+                    <p class="r-card-title {{ $colors[array_rand($colors)] }}">
                         {{ $review->name }}
                     </p>
                     <p class="r-card-desc">
