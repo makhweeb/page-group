@@ -13,18 +13,18 @@
                         @lang('Read more')
                         <span></span>
                     </a>
-                </div>
 
-                <div class="nashi-usluga-modal">
-                    <div class="modal fade" id="{{ 'podrobniBtn' . $service->id }}" aria-hidden="true"
-                         tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
+                    <div class="nashi-usluga-modal">
+                        <div class="modal fade" id="{{ 'podrobniBtn' . $service->id }}" aria-hidden="true"
+                             tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
                                 <span class="close-bg">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </span>
-                                <div class="modal-body">
-                                    {{ $service->content }}
+                                    <div class="modal-body">
+                                        {{ $service->content }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
